@@ -1,6 +1,7 @@
 # KaminFutura
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.1.0.
+Dieses Projekt entstand während meines projektbezogenen Praktikums bei Hottgenroith Software. 
+Meine Aufgabe bestand darin, ein Konzept für eine Web-Anwendung zu erstellen, die auf einer Desktop-Software basiert. (Angular, Tailwind)
 
 ## Development server
 

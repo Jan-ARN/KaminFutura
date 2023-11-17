@@ -1,0 +1,170 @@
+<mat-drawer-container class="flex flex-col h-full">
+  <mat-drawer mode="side" opened class="">
+    <button mat-icon-button class="m-1">
+        <mat-icon>arrow_upward</mat-icon>
+    </button>
+    <br>
+    <button mat-icon-button class="m-1">
+        <mat-icon>arrow_downward</mat-icon>
+    </button>
+    <div style="height: 250px;"></div>
+    <button mat-icon-button class="m-1">
+        <mat-icon>add</mat-icon>
+    </button>
+    <br>
+    <button mat-icon-button class="m-1">
+        <mat-icon>edit</mat-icon>
+    </button>
+    <br>
+    <button mat-icon-button class="m-1">
+        <mat-icon>swap_horiz</mat-icon>
+    </button>
+    <br>
+    <button mat-icon-button class="m-1">
+        <mat-icon>person</mat-icon>
+    </button>
+    <br>
+    <button mat-icon-button class="m-1">
+        <mat-icon>close</mat-icon>
+    </button>
+    <br>
+    <button mat-icon-button class="m-1">
+        <mat-icon>view_module</mat-icon> 
+    </button>
+    <br>
+    <button mat-icon-button class="m-1">
+        <mat-icon>settings</mat-icon>
+    </button>
+    <br>
+    <button mat-icon-button class="m-1">
+        <mat-icon>calendar_today</mat-icon>
+    </button>
+    <br>
+    <button mat-icon-button class="m-1">
+        <mat-icon>access_time</mat-icon>
+    </button>
+</mat-drawer>
+
+  <mat-drawer-content class="overflow-x-auto">
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 p-2">
+
+      <!--Informationen -->
+      <div class="bg-gray-300 shadow-lg rounded-lg p-4">
+          <div class="text-lg font-bold mb-2 text-gray-700">Informationen</div>
+                              <div class="flex items-center space-x-1">
+                          <label class="text-gray-700 text-xs w-24">Lfd. Nr.</label>
+                          <input type="text" class="border rounded w-28 h-4 text-gray-700 my-1">
+                      </div>
+                      <div class="flex items-center space-x-1">
+                          <label class="text-gray-700 text-xs w-24">Kunden-Nr</label>
+                          <input type="text" class="border rounded w-28 h-4 text-gray-700 my-1">
+                      </div>
+                      <hr class="bg-gray-200">
+                      <div class="flex items-center space-x-1">
+                          <label class="text-gray-700 text-xs w-24">Block- | Sam.-Nr</label>
+                          <input type="text" class="border rounded w-12 h-4 text-gray-700 my-1">
+                          <button mat-icon-button class="icon-button">
+                              <mat-icon>search</mat-icon>
+                          </button>
+                          <input type="text" class="border rounded w-12 h-4 text-gray-700 my-1">
+                          <button mat-icon-button class="icon-button">
+                              <mat-icon>search</mat-icon>
+                          </button>
+                      </div>
+                      <div class="flex items-center space-x-1">
+                          <label class="text-gray-700 font-bold underline text-xs w-24">Kennung</label>
+                          <input type="text" class="border rounded w-28 h-4 text-gray-700 my-1">
+                      </div>
+                      <div class="flex items-center space-x-1">
+                          <label class="text-gray-700 text-xs w-24">Gmd.-Knz.</label>
+                          <input type="text" class="border rounded w-28 h-4 text-gray-700 my-1">
+                      </div>
+                      <div class="flex items-center space-x-1">
+                          <label class="text-gray-700 text-xs w-24">Gebäude-Nr.</label>
+                          <input type="text" class="border rounded w-28 h-4 text-gray-700 my-1">
+                      </div>
+                      <div class="flex items-center space-x-1">
+                          <label class="text-gray-700 text-xs w-24">VE-Nr. | Vw.-Nr</label>
+                          <input type="text" class="border rounded w-12 h-4 text-gray-700 my-1">
+                          <input type="text" class="border rounded w-12 h-4 text-gray-700 my-1">
+                      </div>
+                      <div class="flex items-center space-x-1">
+                          <label class="text-gray-700 text-xs w-24">Bauj. | Behörde</label>
+                          <input type="text" class="border rounded w-16 h-4 text-gray-700 my-1">
+                          <input type="text" class="border rounded w-8 h-4 text-gray-700 my-1">
+                          <button mat-icon-button class="icon-button">
+                              <mat-icon>search</mat-icon>
+                          </button>
+                      </div>
+                      <div class="flex items-center space-x-1">
+                          <label class="text-gray-700 text-xs w-24">Reginalschl.</label>
+                          <input type="text" class="border rounded w-28 h-4 text-gray-700">
+                      </div>
+      </div>
+  
+      <!-- Grundstück -->
+      <div class="bg-gray-300 shadow-lg rounded-lg p-4">
+          <div class="text-lg font-bold mb-2 text-gray-700">Grundstück</div>
+          <app-forms></app-forms>
+      </div>
+  
+      <!-- Eigentümer -->
+      <div class="bg-gray-300 shadow-lg rounded-lg p-4">
+          <div class="text-lg font-bold mb-2 text-gray-700">Eigentümer</div>
+          <app-forms></app-forms>
+      </div>
+  
+      <!-- Verwalter -->
+      <div class="bg-gray-300 shadow-lg rounded-lg p-4">
+          <div class="text-lg font-bold mb-2 text-gray-700">Verwalter</div>
+          <app-forms></app-forms>
+      </div>
+  
+  </div>
+    
+
+    <mat-tab-group mat-align-tabs="center" mat-stretch-tabs color="warn" class="text-sm md:text-base lg:text-lg ">
+      <mat-tab label="Hausakte" class="px-1 md:px-2" >
+        <ng-template matTabContent>
+          <app-hausakte></app-hausakte>
+        </ng-template>
+      </mat-tab>
+      <mat-tab label="Wohnung" class="px-1 md:px-2">
+        <ng-template matTabContent>
+
+        </ng-template>
+      </mat-tab>
+      <mat-tab label="Anlagen" class="px-1 md:px-2">
+        <ng-template matTabContent>
+
+        </ng-template>
+      </mat-tab>
+      <mat-tab label="Messung" class="px-1 md:px-2">
+        <ng-template matTabContent>
+
+        </ng-template>
+      </mat-tab>
+      <mat-tab label="Rechnung" class="px-1 md:px-2">
+        <ng-template matTabContent>
+
+        </ng-template>
+      </mat-tab>
+      <mat-tab label="Pläne" class="px-1 md:px-2">
+        <ng-template matTabContent>
+
+        </ng-template>
+      </mat-tab>
+      <mat-tab label="Bericht" class="px-1 md:px-2">
+        <ng-template matTabContent>
+
+        </ng-template>
+      </mat-tab>
+      <mat-tab label="Prüfung" class="px-1 md:px-2">
+        <ng-template matTabContent>
+
+        </ng-template>
+      </mat-tab>
+    </mat-tab-group>
+    </mat-drawer-content>
+    </mat-drawer-container>
+    

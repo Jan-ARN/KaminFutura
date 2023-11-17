@@ -1,0 +1,46 @@
+
+mat-drawer-container {
+  height: 100%;
+  background-color: white;
+}
+
+mat-drawer {
+  background-color: lightgray;
+  height: 100%;
+}
+
+mat-card {
+  width: 420px;
+  background-color: lightgray;
+  color: #000;
+  display: block;
+}
+
+mat-grid-tile-content {
+  align-items: flex-start;
+}
+
+mat-tab-group {
+  background-color: #212121;
+  min-height: 100vh;
+}
+
+.icon-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: 1.5rem; 
+  width: 1.5rem; 
+  padding: 0; 
+}
+
+.mat-mdc-tab-group.mat-warn, .mat-mdc-tab-nav-bar.mat-warn {
+  --mdc-tab-indicator-active-indicator-color: #ad0c00;
+  --mat-tab-header-active-label-text-color: #ad0c00;
+  --mat-tab-header-active-ripple-color: #ad0c00;
+  --mat-tab-header-inactive-ripple-color: #ad0c00;
+  --mat-tab-header-active-focus-label-text-color: #ad0c00;
+  --mat-tab-header-active-hover-label-text-color: #ad0c00;
+  --mat-tab-header-active-focus-indicator-color: #ad0c00;
+  --mat-tab-header-active-hover-indicator-color: #ad0c00;
+}

@@ -1,0 +1,41 @@
+
+.spacer {
+  flex: 1 1 auto;
+}
+
+mat-card {
+  background-color: lightgray;
+  color: #000;
+}
+
+mat-grid-tile-content {
+  align-items: flex-start;
+}
+
+.table-container {
+  max-height: 400px; 
+  overflow: auto; 
+  width: 100%;
+}
+
+.table thead th {
+  position: sticky;
+  top: 0;
+  background: white;
+  z-index: 100;
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.right-content {
+  margin-left: auto;
+}
+
+.border-ad0c00 {
+  border-color: #ad0c00;
+}

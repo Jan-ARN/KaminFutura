@@ -1,0 +1,73 @@
+
+<mat-dialog-content class="m-auto w-11/12 md:w-300 lg:w-200">
+
+    <!-- Wochentage -->
+    <div class="flex justify-between mb-4 flex-wrap">
+            <label class="flex items-center">
+                <input type="checkbox" class="mr-2">Mo
+            </label>
+            <label class="flex items-center">
+                <input type="checkbox" class="mr-2">Di
+            </label>
+            <label class="flex items-center">
+                <input type="checkbox" class="mr-2">Mi
+            </label>
+            <label class="flex items-center">
+                <input type="checkbox" class="mr-2">Do
+            </label>
+            <label class="flex items-center">
+                <input type="checkbox" class="mr-2">Fr
+            </label>
+            <label class="flex items-center">
+                <input type="checkbox" class="mr-2">Sa
+            </label>
+            <label class="flex items-center">
+                <input type="checkbox" class="mr-2">So
+            </label>
+    </div>
+  
+    <!-- Uhrzeit -->
+    <div class="flex flex-col md:flex-row justify-between mb-4">
+        <label class="flex items-center mb-2 md:mb-0 md:mr-4">
+            Von:
+            <input type="time" class="border rounded p-1 ml-2">
+        </label>
+        <label class="flex items-center">
+            Bis:
+            <input type="time" class="border rounded p-1 ml-2">
+        </label>
+    </div>
+  
+    <!-- Abwesende Zeit -->
+    <div class="flex flex-col md:flex-row justify-between mb-4">
+        <label class="flex items-center mb-2 md:mb-0 md:mr-4">
+            Abwesend von:
+            <input type="date" class="border rounded p-1 ml-2">
+        </label>
+        <label class="flex items-center">
+            Abwesend bis:
+            <input type="date" class="border rounded p-1 ml-2">
+        </label>
+    </div>
+  
+    <!-- Mitarbeiter Dropdown -->
+    <div class="mb-4">
+        <mat-form-field appearance="fill" class="w-full" disabled>
+            <mat-label>Mitarbeiter</mat-label>
+            <mat-select>
+                <mat-option></mat-option>
+            </mat-select>
+        </mat-form-field>
+    </div>
+  
+    <div class="flex justify-end">
+      <button mat-icon-button aria-label="Bestätigen" (click)="confirmDate()">
+        <mat-icon>check_circle</mat-icon>
+      </button>
+      <button mat-icon-button aria-label="Abbrechen" (click)="cancel()">
+        <mat-icon>cancel</mat-icon>
+      </button>
+    </div>
+  
+  </mat-dialog-content>
+  
